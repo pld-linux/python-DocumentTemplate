@@ -1,10 +1,12 @@
 %define pp_subname DocumentTemplate
-Summary:	Document creation system based on templates to create HTML and other documents.
+Summary:	Document creation system based on templates to create HTML and other documents
+Summary(pl):	System tworzenia dokumentów HTML i innych bazuj±cy na wzorcach
 Name:		python-%{pp_subname}
 Version:	2.3.0
 Release:	1
-Copyright:	Zope Public Licence
+License:	Zope Public Licence
 Group:		Development/Languages/Python
+Group(de):	Entwicklung/Sprachen/Python
 Group(pl):	Programowanie/Jêzyki/Python
 Source0:	ZTemplates-%{version}.tar.gz
 Patch0:		ztemplate-bld.patch
@@ -21,6 +23,15 @@ useful when it is desirable to separate template text from python
 program source. For example, HTML templates may be edited by people
 who know HTML, and don't know python, while associated python code may
 be edited by people who know python but not HTML.
+
+%description -l pl
+DocumentTemplates (ZTemplates) pozwalaj± tworzyæ tekstowe dokumenty,
+takie jak strony HTML, ze wzorca przez wstawianie danych z obiektów i
+przestrzeni nazw Pythona. DocumentTemplates s± przydatne zw³aszcza do
+oddzielenia tekstu wzorca od ¼róde³ programu w Pythonie. Na przyk³ad,
+wzorce HTML mog± byæ modyfikowane przez ludzi znaj±cych HTML, a nie
+znaj±cych Pythona, natomiast kod w Pythonie mo¿e byæ modyfikowany
+przez znaj±cych Pythona, ale nie HTML.
 
 %prep
 %setup -q -n ZTemplates-2.3.0
