@@ -9,7 +9,7 @@ Group(pl):     Programowanie/Jêzyki/Python
 Source:        ZTemplates-%{version}.tar.gz
 Patch:         ztemplate-bld.patch
 Requires:      python >= 1.5 
-BuildRoot:	   /tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Icon:          linux-python-small.gif
 #BuildRequires: python-devel >= 1.5, sed
 
