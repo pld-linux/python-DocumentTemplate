@@ -6,8 +6,6 @@ Version:	2.3.0
 Release:	1
 License:	Zope Public Licence
 Group:		Development/Languages/Python
-Group(de):	Entwicklung/Sprachen/Python
-Group(pl):	Programowanie/Jêzyki/Python
 Source0:	ZTemplates-%{version}.tar.gz
 Patch0:		ztemplate-bld.patch
 #BuildRequires:	python-devel >= 1.5, sed
