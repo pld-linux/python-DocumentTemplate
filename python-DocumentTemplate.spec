@@ -29,7 +29,7 @@ be edited by people who know python but not HTML.
 %build
 cd DocumentTemplate
 %{__make} -f Makefile.pre.in boot
-make
+%{__make}
 python -O *.py
 
 python - <<END
