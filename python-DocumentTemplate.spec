@@ -28,7 +28,7 @@ be edited by people who know python but not HTML.
 
 %build
 cd DocumentTemplate
-make -f Makefile.pre.in boot
+%{__make} -f Makefile.pre.in boot
 make
 python -O *.py
 
