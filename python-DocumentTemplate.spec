@@ -1,5 +1,6 @@
+%define pp_subname DocumentTemplate
 Summary:       Document creation system based on templates to create HTML and other documents.
-Name:          python-DocumentTemplate
+Name:          python-%{pp_subname}
 Version:       2.3.0
 Release:       1
 Copyright:     Zope Public Licence
@@ -41,12 +42,11 @@ for f in os.listdir("."):
 END
 
 %install
-install -d -m 755 $RPM_BUILD_ROOT%{_libdir}/python1.5/site-packages/DocumentTemplate
-echo %{_libdir}/python1.5/site-packages/DocumentTemplate \
-  > $RPM_BUILD_ROOT%{_libdir}/python1.5/site-packages/DocumentTemplate.pth
-install -m 644 $RPM_BUILD_DIR/ZTemplates-2.3.0/DocumentTemplate/*.py $RPM_BUILD_ROOT%{_libdir}/python1.5/site-packages/DocumentTemplate
-install -m 644 $RPM_BUILD_DIR/ZTemplates-2.3.0/DocumentTemplate/*.py{c,o} $RPM_BUILD_ROOT%{_libdir}/python1.5/site-packages/DocumentTemplate
-install -m 755 $RPM_BUILD_DIR/ZTemplates-2.3.0/DocumentTemplate/*.so $RPM_BUILD_ROOT%{_libdir}/python1.5/site-packages/DocumentTemplate
+install -d -m 755 $RPM_BUILD_ROOT%{_libdir}/python1.5/site-packages/%{pp_subname}
+echo %{pp_subname} > $RPM_BUILD_ROOT%{_libdir}/python1.5/site-packages/%{pp_subname}.pth
+install -m 644 $RPM_BUILD_DIR/ZTemplates-2.3.0/DocumentTemplate/*.py $RPM_BUILD_ROOT%{_libdir}/python1.5/site-packages/%{pp_subname}
+install -m 644 $RPM_BUILD_DIR/ZTemplates-2.3.0/DocumentTemplate/*.py{c,o} $RPM_BUILD_ROOT%{_libdir}/python1.5/site-packages/%{pp_subname}
+install -m 755 $RPM_BUILD_DIR/ZTemplates-2.3.0/DocumentTemplate/*.so $RPM_BUILD_ROOT%{_libdir}/python1.5/site-packages/%{pp_subname}
 
 gzip -9nf CHANGES.txt LICENSE.txt README.txt
 
@@ -55,5 +55,5 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc {CHANGES.txt,LICENSE.txt,README.txt}.gz
-%{_libdir}/python1.5/site-packages/DocumentTemplate
-%{_libdir}/python1.5/site-packages/DocumentTemplate.pth
+%{_libdir}/python1.5/site-packages/%{pp_subname}
+%{_libdir}/python1.5/site-packages/%{pp_subname}.pth
