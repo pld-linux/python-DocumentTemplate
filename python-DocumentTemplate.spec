@@ -1,4 +1,4 @@
-%define pp_subname DocumentTemplate
+%define	pp_subname	DocumentTemplate
 Summary:	Document creation system based on templates to create HTML and other documents
 Summary(pl):	System tworzenia dokumentów HTML i innych bazuj±cy na wzorcach
 Name:		python-%{pp_subname}
@@ -16,11 +16,11 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 DocumentTemplates (ZTemplates) provide for creation of textual
 documents, such as HTML pages, from template source by inserting data
-from python objects and name-spaces. DocumentTemplates are especially
-useful when it is desirable to separate template text from python
+from Python objects and name-spaces. DocumentTemplates are especially
+useful when it is desirable to separate template text from Python
 program source. For example, HTML templates may be edited by people
-who know HTML, and don't know python, while associated python code may
-be edited by people who know python but not HTML.
+who know HTML, and don't know Python, while associated Python code may
+be edited by people who know Python but not HTML.
 
 %description -l pl
 DocumentTemplates (ZTemplates) pozwalaj± tworzyæ tekstowe dokumenty,
