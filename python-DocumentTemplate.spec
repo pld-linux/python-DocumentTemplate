@@ -4,7 +4,7 @@ Summary(pl):	System tworzenia dokumentów HTML i innych bazuj±cy na wzorcach
 Name:		python-%{pp_subname}
 Version:	2.3.0
 Release:	2
-License:	Zope Public Licence (ZPL)
+License:	Zope Public License (ZPL)
 Group:		Development/Languages/Python
 Source0:	ZTemplates-%{version}.tar.gz
 Patch0:		ztemplate-bld.patch
