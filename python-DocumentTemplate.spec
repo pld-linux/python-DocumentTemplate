@@ -58,8 +58,6 @@ install $RPM_BUILD_DIR/ZTemplates-2.3.0/DocumentTemplate/*.py $RPM_BUILD_ROOT%{_
 install $RPM_BUILD_DIR/ZTemplates-2.3.0/DocumentTemplate/*.py{c,o} $RPM_BUILD_ROOT%{_libdir}/python1.5/site-packages/%{pp_subname}
 install -m 755 $RPM_BUILD_DIR/ZTemplates-2.3.0/DocumentTemplate/*.so $RPM_BUILD_ROOT%{_libdir}/python1.5/site-packages/%{pp_subname}
 
-gzip -9nf CHANGES.txt LICENSE.txt README.txt
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
