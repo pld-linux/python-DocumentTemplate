@@ -3,8 +3,8 @@ Summary:	Document creation system based on templates to create HTML and other do
 Summary(pl):	System tworzenia dokumentów HTML i innych bazuj±cy na wzorcach
 Name:		python-%{pp_subname}
 Version:	2.3.0
-Release:	1
-License:	Zope Public Licence
+Release:	2
+License:	Zope Public Licence (ZPL)
 Group:		Development/Languages/Python
 Source0:	ZTemplates-%{version}.tar.gz
 Patch0:		ztemplate-bld.patch
@@ -65,6 +65,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc {CHANGES.txt,LICENSE.txt,README.txt}.gz
+%doc CHANGES.txt LICENSE.txt README.txt
 %{_libdir}/python1.5/site-packages/%{pp_subname}
 %{_libdir}/python1.5/site-packages/%{pp_subname}.pth
