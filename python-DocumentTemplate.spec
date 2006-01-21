@@ -9,7 +9,6 @@ Group:		Development/Languages/Python
 Source0:	ZTemplates-%{version}.tar.gz
 Patch0:		ztemplate-bld.patch
 #BuildRequires:	python-devel >= 1.5, sed
-Icon:		linux-python-small.gif
 Requires:	python >= 1.5
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
