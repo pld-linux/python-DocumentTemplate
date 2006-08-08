@@ -32,7 +32,7 @@ przez znaj±cych Pythona, ale nie HTML.
 
 %prep
 %setup -q -n ZTemplates-2.3.0
-%patch -p1
+%patch0 -p1
 
 %build
 cd DocumentTemplate
