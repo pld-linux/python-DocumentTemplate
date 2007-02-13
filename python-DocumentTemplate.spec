@@ -1,6 +1,6 @@
 %define	pp_subname	DocumentTemplate
 Summary:	Document creation system based on templates to create HTML and other documents
-Summary(pl.UTF-8):   System tworzenia dokumentów HTML i innych bazujący na wzorcach
+Summary(pl.UTF-8):	System tworzenia dokumentów HTML i innych bazujący na wzorcach
 Name:		python-%{pp_subname}
 Version:	2.3.0
 Release:	2
